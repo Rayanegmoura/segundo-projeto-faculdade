@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    transition: .5s;
+    margin-left: 20px
+}
+
+.inteface {
+    margin: 1280px;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+
+  /* PADRONIZANDO ESTILO */
+
+  .perfil-container h2 {
+    padding: 10px;
+    color: #38c1a0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .perfil-container h3 {
+    padding: 10px;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .perfil-container strong {
+    padding: 10px;
+    font-size: 18px;
+    color: #2e71c6;
+    text-transform: uppercase;
+  }
+
+  .perfil-container p {
+    padding: 5px;
+    font-size: 17px;
+  }
+
+  .perfil-container button {
+    margin: 20px 10px;
+    color: #fff;
+    background-color: #38c1a0;
+  }
+
+  .perfil-container button:hover {
+    margin: 15px 10px;
+    color: #fff;
+    background-color: #2e71c6;
+    border: 2px solid #2e71c6
+  }
+
+  .perfil-container .projeto {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #80808020;
+    box-shadow: 1px 2px 5px #38c1a0;
+  }
+
+/* CONVITES */
+
+  .btn-convite p {
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+/* HISTÓRICO */
+
+.historico .status {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end; 
+  margin: 0;
+}
+
+.historico .status button {
+  margin: 0;
+  padding: 5px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .planos-container {
+      flex-direction: column;
+  }
+}
+  

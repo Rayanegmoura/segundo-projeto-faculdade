@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Empresa</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style-suporte.css">
+
+    <link rel="stylesheet" type="text/css" href="style-acessibilidade.css">
+    <script src="script-acessibilidade.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="menu">
+
+        <nav class="menu-lateral">
+
+            <div class="logo-ue">
+                <a href="/index.php">
+                    <img id="imagemAcessibilidade" src="img-logo.png" alt="Dev Hunt" />
+                </a><!--link-logo-->
+            </div><!--logo-->
+
+            <div class="btn-expandir">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div><!--btn-expandir-->
+    
+            <ul>
+                <li class="item-menu">
+                    <a href="index.php">
+                        <span class="icon"><i class="bi bi-house" title="Início"></i></span>
+                        <span class="txt-link" href="index.php">Início</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="projetos.html">
+                        <span class="icon"><i class="bi bi-code-square"></i></span>
+                        <span class="txt-link">Projetos</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="userempresa.html">
+                        <span class="icon"><i class="bi bi-bar-chart-steps"></i></span>
+                        <span class="txt-link" href="index.php">Propostas</span>
+                    </a>
+                </li>
+                
+                <li class="item-menu">
+                    <a href="perfil.html">
+                        <span class="icon"><i class="bi bi-file-person" title="quemsomos"></i></span>
+                        <span class="txt-link">Perfil</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="planos-empresa.html">
+                        <span class="icon"><i class="bi bi-clipboard-check-fill"></i></span>
+                        <span class="txt-link">Planos</span>
+                    </a>
+                </li>
+    
+                <li class="item-menu ativo">
+                    <a href="suporte.html">
+                        <span class="icon"><i class="bi bi-chat-left-dots"></i></span>
+                        <span class="txt-link">Ajuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav><!--menu-lateral-->
+    
+        <script src="script-userempresa.js"></script>
+
+    </header><!--fim-menu-principal-->
+
+    <div class="btn-fixo" id="btn-fixo">
+        <button class="fixo" id="toggleAcessibilidade"><i class="bi bi-universal-access-circle"></i></button>
+    
+        <div class="acessibilidade" id="acessibilidade">
+            <h6 class="acess">Acessibilidade</h6>
+            
+            <div class="modo-escuro">
+                <div class="trilho" id="trilho">
+                    <div class="indicador"></div><!--indicador-->
+                </div><!--trilho-->
+            </div><!--modo-escuro-->
+    
+            <div class="maior-menor" id="maior-menor">
+                <button type="button" id="btnAumentar">A+</button>
+                <button type="button" id="btnDiminuir">A-</button>
+            </div> <!--maior-menor-->
+        </div><!--acessibilidade-->
+    </div><!--btn-fixo-->
+
+    <div id="content">
+        <section class="topo-suporte">
+            <div class="interface">
+                <h1>Suporte Dev Hunt</h1>
+                <div class="flex">
+                    <div class="lista-tp">
+                        <ul>
+                            <a href="#"><li>Perfil</li></a>
+                            <a href="#"><li>Projetos</li></a>
+                            <a href="#"><li>Propostas</li></a>
+                            <a href="#"><li>Contratos</li></a>
+                            <a href="#"><li>Planos</li></a>
+                            <a href="#"><li>Pagamento</li></a>
+                            <a href="#"><li>Taxas</li></a>
+                        </ul>
+                    </div><!--lista-op-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section>
+        
+        <section class="btn-suporte">
+            <div class="interface">
+                <div class="flex">
+                    <div class="btn-st">
+                        <a href="#">
+                            <button>
+                                <i class="bi bi-key"></i>
+                                <h3>Esqueceu a senha?</h3>
+                            </button>
+                        </a>
+                    </div><!--caixa-st-->
+        
+                    <div class="btn-st">
+                        <a href="#">
+                            <button>
+                                <i class="bi bi-ui-checks"></i>
+                                <h3>Assinatura e Cobrança</h3>
+                            </button>
+                        </a>
+                    </div><!--caixa-st-->
+        
+                    <div class="btn-st">
+                        <a href="#">
+                            <button>
+                                <i class="bi bi-chat-right-text"></i>
+                                <h3>Suporte Online</h3>
+                            </button>
+                        </a>
+                    </div><!--caixa-st-->
+                </div><!---flex-->
+            </div><!--interface-->
+        </section><!--cx-suporte-->
+
+        <section class="br-pesquisa">
+            <div class="interface">
+                <div class="flex">
+                    <div class="barra">
+                        <input type="search" placeholder="Buscar no Suporte"><i class="bi bi-search"></i>
+                    </div><!--barra-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--br-pesquisa-->
+
+        <section class="box-suporte">
+            <div class="interface">
+                <div class="flex">
+                    <div class="box-1">
+                        <h2>Últimas notícias...</h2>
+                        <h4><strong>Nova Função:</strong></h4> <p>Agora você pode conversar diretamente com nossos desenvolvedores pelo chat!</p>
+
+                        <h4><strong>Promoção:</strong></h4><p> Desconto de 10% para planos anuais até o final do mês.</p>
+
+                        <h4><strong>Manutenção:</strong></h4><p> O sistema de pagamentos estará em manutenção no dia 16/12.</p>
+
+                        <h4><strong>Webinars Gratuitos:</strong></h4><p> Participe de nossos webinars exclusivos sobre como maximizar o uso da plataforma e conquistar mais projetos! Inscreva-se para o próximo webinar no dia 20/11.</p>
+
+                        <h4><strong>Feedback de Usuário:</strong></h4><p> Estamos realizando uma pesquisa para entender melhor suas necessidades. Participe e ganhe um crédito de 5% na próxima renovação do seu plano!</p>
+                    </div><!--suporte-1-->
+
+                    <div class="box-2">
+
+                        <div class="links-rapidos">
+                            <h2>Contatos</h2>
+                            <h4><strong>Email:</strong></h4><p> suporte@devhunt.com</p>
+                            <h4><strong>Telefone:</strong></h4><p> (21) 1234-5678</p>
+                            <h4><strong>Horário de Atendimento:</strong></h4><p>Seg. a Sex  - 9h às 18h</p>
+                    
+                            <h4><strong>Perguntas Frequentes:</strong></h4>
+                            <ul>
+                                <a href="#"><li>Como recuperar minha senha?</li></a>
+                                <a href="#"><li>Quais os métodos de pagamento?</li></a>
+                                <a href="#"><li>Como atualizar meu plano?</li></a>
+                                <a href="#"><li>Como editar meu currículo?</li></a>
+                                <a href="#"><li>Como impulsionar meu perfil?</li></a>
+                                <a href="#"><li>Quais as melhores empresas?</li></a>
+                            </ul>
+                        </div><!--links-rapidos-->
+
+                    </div><!--box-2-->
+                </div><!---flex-->
+            </div><!---interface-->
+        </section><!--box-suporte-->
+    </div>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+
+</body>
+
+</html>

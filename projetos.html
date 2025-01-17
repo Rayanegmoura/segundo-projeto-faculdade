@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Empresa</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style-projetos.css">
+
+    <link rel="stylesheet" type="text/css" href="style-acessibilidade.css">
+    <script src="script-acessibilidade.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="menu">
+
+        <nav class="menu-lateral">
+
+            <div class="logo-ue">
+                <a href="/index.php">
+                    <img id="imagemAcessibilidade" src="img-logo.png" alt="Dev Hunt" />
+                </a><!--link-logo-->
+            </div><!--logo-->
+
+            <div class="btn-expandir">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div><!--btn-expandir-->
+    
+            <ul>
+                <li class="item-menu">
+                    <a href="index.php">
+                        <span class="icon"><i class="bi bi-house" title="Início"></i></span>
+                        <span class="txt-link" href="index.php">Início</span>
+                    </a>
+                </li>
+
+                <li class="item-menu ativo">
+                    <a href="projetos.html">
+                        <span class="icon"><i class="bi bi-code-square"></i></span>
+                        <span class="txt-link">Projetos</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="userempresa.html">
+                        <span class="icon"><i class="bi bi-bar-chart-steps"></i></span>
+                        <span class="txt-link" href="index.php">Propostas</span>
+                    </a>
+                </li>
+                
+                <li class="item-menu">
+                    <a href="perfil.html">
+                        <span class="icon"><i class="bi bi-file-person" title="quemsomos"></i></span>
+                        <span class="txt-link">Perfil</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="planos-empresa.html">
+                        <span class="icon"><i class="bi bi-clipboard-check-fill"></i></span>
+                        <span class="txt-link">Planos</span>
+                    </a>
+                </li>
+    
+                <li class="item-menu">
+                    <a href="suporte.html">
+                        <span class="icon"><i class="bi bi-chat-left-dots"></i></span>
+                        <span class="txt-link">Ajuda</span>
+                    </a>
+                </li>
+            </ul>
+        </nav><!--menu-lateral-->
+    
+        <script src="script-userempresa.js"></script>
+
+    </header><!--fim-menu-principal-->
+
+    <div class="btn-fixo" id="btn-fixo">
+        <button class="fixo" id="toggleAcessibilidade"><i class="bi bi-universal-access-circle"></i></button>
+    
+        <div class="acessibilidade" id="acessibilidade">
+            <h6 class="acess">Acessibilidade</h6>
+            
+            <div class="modo-escuro">
+                <div class="trilho" id="trilho">
+                    <div class="indicador"></div><!--indicador-->
+                </div><!--trilho-->
+            </div><!--modo-escuro-->
+    
+            <div class="maior-menor" id="maior-menor">
+                <button type="button" id="btnAumentar">A+</button>
+                <button type="button" id="btnDiminuir">A-</button>
+            </div> <!--maior-menor-->
+        </div><!--acessibilidade-->
+    </div><!--btn-fixo-->
+
+    <div id="content">
+
+        <main class="perfil-container">
+            <!-- Abas -->
+            <nav class="perfil-nav">
+                <ul>
+                    <li><a href="#" class="active" onclick="mostrarConteudo('projetos-ativos')">Projetos Ativos</a></li>
+                    <li><a href="#" onclick="mostrarConteudo('convites')">Convites</a></li>
+                    <li><a href="#" onclick="mostrarConteudo('historico-projetos')">Histórico de Projetos</a></li>
+                </ul>
+            </nav>
+
+          <!-- Conteúdo de Projetos Ativos -->
+
+            <section id="projetos-ativos" class="perfil-content mostrado">
+                <h2>Projetos Ativos</h2>
+                <div class="projeto">
+                    <h3>Desenvolvimento de Aplicativo</h3>
+                    <p><strong>Cliente:</strong> AppCorp</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                    <p><strong>Prazo:</strong> 15/11/2024</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+
+                <div class="projeto">
+                    <h3>Front-end de Loja Virtual</h3>
+                    <p><strong>Cliente:</strong> Jaqueline</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                    <p><strong>Prazo:</strong> 16/01/2025</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+
+                <div class="projeto">
+                    <h3>Integração Back-end</h3>
+                    <p><strong>Cliente:</strong> ATG Company</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                    <p><strong>Prazo:</strong> 05/05/2025</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+
+                <div class="projeto">
+                    <h3>Atualização Mobile</h3>
+                    <p><strong>Cliente:</strong> MB Teck</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                    <p><strong>Prazo:</strong> 21/12/2024</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+
+                <div class="projeto">
+                    <h3>Loja Virtual de Esportes</h3>
+                    <p><strong>Cliente:</strong> Pablo</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                    <p><strong>Prazo:</strong> 19/12/2024</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+
+                <div class="projeto">
+                    <h3>Analise de dados</h3>
+                    <p><strong>Cliente:</strong> VPN TX</p>
+                    <p><strong>Status:</strong> Em andamento</p>
+                    <p><strong>Prazo:</strong> 30/12/2024</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+            </section>
+                
+            <!-- Conteúdo de Convites -->
+            <section id="convites" class="perfil-content">
+                <h2>Convites</h2>
+                <div class="convite projeto">
+                    <h3>Projeto de Redesign de E-commerce</h3>
+                    <p><strong>Descrição:</strong> Criação de uma nova identidade visual para uma loja virtual.</p>
+                    <p><strong>Empresa:</strong> Loja Online ABC</p>
+                    <p><strong>Prazo:</strong> 3 meses</p>
+                    <p><strong>Pagamento:</strong> até 8 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="convite projeto">
+                    <h3>Aplicativo de Delivery</h3>
+                    <p><strong>Descrição:</strong> Desenvolvimento de um app para entrega de alimentos com integração de mapas.</p>
+                    <p><strong>Empresa:</strong> FoodFast</p>
+                    <p><strong>Prazo:</strong> 5 meses</p>
+                    <p><strong>Pagamento:</strong> até 15 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="convite projeto">
+                    <h3>Plataforma de Ensino Online</h3>
+                    <p><strong>Descrição:</strong> Construção de um sistema para cursos virtuais com integração de vídeo.</p>
+                    <p><strong>Empresa:</strong> EduTech Inc.</p>
+                    <p><strong>Prazo:</strong> 4 meses</p>
+                    <p><strong>Pagamento:</strong> até 12 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="convite projeto">
+                    <h3>Sistema de Gestão Empresarial</h3>
+                    <p><strong>Descrição:</strong> Implementação de um ERP para pequenas empresas.</p>
+                    <p><strong>Empresa:</strong> StartBiz</p>
+                    <p><strong>Prazo:</strong> 6 meses</p>
+                    <p><strong>Pagamento:</strong> até 20 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="convite projeto">
+                    <h3>Automação de Marketing</h3>
+                    <p><strong>Descrição:</strong> Criação de ferramentas para envio automatizado de campanhas publicitárias.</p>
+                    <p><strong>Empresa:</strong> MarketPro</p>
+                    <p><strong>Prazo:</strong> 2 meses</p>
+                    <p><strong>Pagamento:</strong> até 7 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="convite projeto">
+                    <h3>Blog de Notícias</h3>
+                    <p><strong>Descrição:</strong> Desenvolvimento de um site para publicação de notícias com suporte a artigos.</p>
+                    <p><strong>Empresa:</strong> NewsOnline</p>
+                    <p><strong>Prazo:</strong> 1 mês</p>
+                    <p><strong>Pagamento:</strong> até 5 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+                <div class="convite projeto">
+                    <h3>Sistema de Reservas de Hotéis</h3>
+                    <p><strong>Descrição:</strong> Construção de uma plataforma para gerenciar reservas de hotéis.</p>
+                    <p><strong>Empresa:</strong> TravelEasy</p>
+                    <p><strong>Prazo:</strong> 3 meses</p>
+                    <p><strong>Pagamento:</strong> até 10 mil</p>
+                    <div class="btn-convite">
+                        <p><span>Deseja participar?</span></p>
+                        <button class="btn-aceitar">Aceitar</button>
+                        <button class="btn-recusar">Recusar</button>
+                    </div>
+                </div>
+                
+            </section>
+            
+             <!-- Conteúdo de Histórico de Projetos -->
+            <section id="historico-projetos" class="perfil-content">
+                <h2>Histórico de Projetos</h2>
+                <div class="historico projeto">
+                    <div class="status">
+                        <button>concluido</button>
+                    </div>
+                    <h3>Aplicativo Fitness</h3>
+                    <p><strong>Empresa:</strong> FitLife</p>
+                    <p><strong>Descrição do Projeto:</strong> Desenvolvimento de um aplicativo para monitoramento de exercícios e nutrição.</p>
+                    <p><strong>Data de Início:</strong> 15/03/2024</p>
+                    <p><strong>Data de Conclusão:</strong> 10/05/2024</p>
+                    <p><strong>Principais Tecnologias Usadas:</strong> Kotlin, Firebase</p>
+                    <p><strong>Feedback do Cliente:</strong> "Muito bem desenvolvido, com funcionalidades práticas e intuitivas."</p>
+                    <p><strong>Nota:</strong> 10/10</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+                
+                <div class="historico projeto">
+                    <div class="status">
+                        <button>concluido</button>
+                    </div>
+                    <h3>Dashboard de Vendas</h3>
+                    <p><strong>Empresa:</strong> SalesPro</p>
+                    <p><strong>Descrição do Projeto:</strong> Criação de um painel para visualização de métricas de vendas em tempo real.</p>
+                    <p><strong>Data de Início:</strong> 20/02/2024</p>
+                    <p><strong>Data de Conclusão:</strong> 25/04/2024</p>
+                    <p><strong>Principais Tecnologias Usadas:</strong> Angular, Node.js, MySQL</p>
+                    <p><strong>Feedback do Cliente:</strong> "Solução robusta e escalável, atendeu todas as expectativas."</p>
+                    <p><strong>Nota:</strong> 9/10</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+                
+                <div class="historico projeto">
+                    <div class="status">
+                        <button>concluido</button>
+                    </div>
+                    <h3>Portal de Educação</h3>
+                    <p><strong>Empresa:</strong> LearnMore</p>
+                    <p><strong>Descrição do Projeto:</strong> Plataforma para aulas online com suporte a avaliação de alunos.</p>
+                    <p><strong>Data de Início:</strong> 01/06/2024</p>
+                    <p><strong>Data de Conclusão:</strong> 30/07/2024</p>
+                    <p><strong>Principais Tecnologias Usadas:</strong> Laravel, Vue.js, PostgreSQL</p>
+                    <p><strong>Feedback do Cliente:</strong> "Fácil de usar e altamente funcional, recomendado para o setor educacional."</p>
+                    <p><strong>Nota:</strong> 9.8/10</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+                
+                <div class="historico projeto">
+                    <div class="status">
+                        <button>concluido</button>
+                    </div>
+                    <h3>E-commerce para Roupas</h3>
+                    <p><strong>Empresa:</strong> TrendyWear</p>
+                    <p><strong>Descrição do Projeto:</strong> Desenvolvimento de uma loja virtual com integração de meios de pagamento.</p>
+                    <p><strong>Data de Início:</strong> 10/01/2024</p>
+                    <p><strong>Data de Conclusão:</strong> 28/02/2024</p>
+                    <p><strong>Principais Tecnologias Usadas:</strong> Shopify, JavaScript</p>
+                    <p><strong>Feedback do Cliente:</strong> "Design elegante e funcionalidades completas, excelente para vendas online."</p>
+                    <p><strong>Nota:</strong> 9.2/10</p>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+                
+            </section>
+            
+        </main>
+        
+        <script>
+            function mostrarConteudo(aba) {
+                document.querySelectorAll(".perfil-content").forEach(section => section.classList.remove("mostrado"));
+                document.getElementById(aba).classList.add("mostrado");
+                document.querySelectorAll(".perfil-nav a").forEach(link => link.classList.remove("active"));
+                document.querySelector(`[onclick="mostrarConteudo('${aba}')"]`).classList.add("active");
+            }
+        </script>
+        
+    </div>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+
+</body>
+
+</html>
